@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import GoalList from './components/GoalList/GoalList';
+import GoalList from './components/GoalList/GoalList.component';
 
 const App = () => {
 
   const courseGoals = [
-    { id: "cg1", text: "Finish the Coruse" },
+    { id: "cg1", text: "Finish the Course" },
     { id: "cg2", text: "Learn about the Topics" },
     { id: "cg3", text: "Refresh React" },
   ]

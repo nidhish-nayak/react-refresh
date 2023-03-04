@@ -1,4 +1,4 @@
-import './GoalList.scss';
+import './GoalList.styles.scss';
 
 const GoalList = ({ goals }) => {
     return (
