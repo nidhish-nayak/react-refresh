@@ -5,7 +5,7 @@ const GoalList = ({ goals }) => {
         <ul className="goal-list">
             {
                 goals.map(goal => {
-                    return (<li>{goal.text}</li>)
+                    return (<li key={goal.id}>{goal.text}</li>)
                 })
             }
         </ul>
