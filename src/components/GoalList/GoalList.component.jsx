@@ -1,6 +1,7 @@
 import './GoalList.styles.scss';
 
 const GoalList = ({ goals }) => {
+
     return (
         <ul className="goal-list">
             {
