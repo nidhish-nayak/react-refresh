@@ -3,7 +3,7 @@ import './NewGoal.styles.scss';
 
 const NewGoal = ({ goals, addGoalToList }) => {
     const [count, setCount] = useState(4);
-    const [goal, setGoal] = useState({ id: 'cg' + count, text: "Default Goal" });
+    const [goal, setGoal] = useState({ id: 'cg' + count, text: "" });
 
     const changeHandler = (event) => {
         setGoal({ id: 'cg' + count, text: event.target.value });
@@ -20,8 +20,8 @@ const NewGoal = ({ goals, addGoalToList }) => {
         })
         if (flag === 0) {
             setCount(count + 1);
-            goals.push(goal);
-            addGoalToList(goals);
+            const updatedGoals = [...goals, goal];
+            addGoalToList(updatedGoals);
         }
     }
 
